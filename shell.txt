@@ -1,0 +1,5 @@
+#  train
+python train.py --train_dataset "./data/GLAS/train/" --val_dataset "./data/GLAS/testB/" --direc "./save_models/0912_frist/" --batch_size 1 --epoch 400 --save_freq 10 --modelname "kiunet" --learning_rate 0.0001
+
+#  predcition
+python test.py --loaddirec "./save_models/0912_GLAS/model.pth" --val_dataset "./data/GLAS/testB/" --direc "./save_models/0912_GLAS/pred/" --batch_size 1 --modelname "kiunet"
